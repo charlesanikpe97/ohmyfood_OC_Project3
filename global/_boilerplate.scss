@@ -1,0 +1,66 @@
+@use '../global/fonts' as f;
+@use '../util/' as u;
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: f.$text;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.flex-jc-c {
+    display: flex;
+    justify-content: center;
+} //Flexbox helper class
+
+
+.flex-c-ai-c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} //Flexbox helper class 2
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+
+
+@include u.breakpoint(large) {
+    body {
+        max-width: 60vw;
+        margin-inline: auto;
+        border: thin solid whitesmoke;
+    }
+}
+

@@ -1,0 +1,115 @@
+@use '../global/' as h;
+
+.main.flex-jc-c i {
+    position: relative;
+    top: 2.3rem;
+    right: 20vw;
+    
+}
+
+
+.menu-photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.menu {
+    background-color: h.$Grey;
+    border-top-left-radius: 1.7rem;
+    border-top-right-radius: 1.7rem;
+    // position: relative;
+    // bottom: 2.6rem;
+
+    .menu__title.flex-jc-c {
+
+        font-family: h.$logo;
+        font-size: 1.5rem;
+        justify-content: space-around;
+    }
+
+    .menu__title i {
+        position: relative;
+        top: 2.6rem;
+    
+    }
+
+    .menu__list {
+        padding-left: .8rem;
+        padding-right: .8rem;
+
+        &--title {
+            font-size: 1rem;
+            font-weight: 300;
+            margin-bottom: 0;
+            padding-left: 1rem;
+
+            &--decor {
+                color: h.$Tertiary;
+                margin-top: 0;
+                position: relative;
+                bottom: .7rem;
+                font-weight: 700;
+                font-size: 1rem;
+                padding-left: 1rem;
+            }
+        }
+
+        &--dish {
+            background-color: white;
+            border: thin solid transparent;
+            border-radius: 1rem;
+            margin-bottom: 0.875rem;
+            width: 95%;
+            margin-inline: auto;
+            padding-left: 0;
+            -webkit-box-shadow: 2px 4px 11px 5px rgba(153,153,153,0.33); 
+            box-shadow: 2px 4px 11px 5px rgba(153,153,153,0.33);
+            position: relative;
+            overflow: hidden;
+
+            &--name {
+                font-size: 1.2rem;
+                padding-left: .6rem;
+                margin-top: .7rem;
+                margin-bottom: .4rem;
+            }
+
+            &--des.flex-jc-c {
+                justify-content: space-between;
+                padding-bottom: .8rem;
+            }
+
+            &--des p {
+                padding-left: .6rem;
+                font-size: 1rem;
+                font-weight: 300;
+            }
+
+            &--des span strong {
+                position: absolute;
+                left: 90%;
+                transition: all 1s;
+            }
+        }
+    }
+
+
+}
+
+.menu-photo.grid-item-mp {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    transform: translate(0, 0.9375rem);
+}
+
+.menu.grid-item-menu {
+    grid-column: 1/4;
+    grid-row: 2/4;
+    z-index: 1;
+}
+
+.button.flex-c-ai-c {
+    padding-top: 3.125rem;
+}

@@ -1,0 +1,13 @@
+// 700px, 900px, 1440px 
+
+$breakpoints-up: (
+    'medium': 43.75em, //700px converted to ems (/16) for accessibilty reasons
+    'large': 56.25em, //900px
+    'xlarge': 90em, //1440
+);// Sass Map for media query mixin.
+
+@mixin breakpoint($size) {
+    @media (min-width: map-get($breakpoints-up, $size)) {
+        @content
+    }
+};
