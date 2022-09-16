@@ -1,4 +1,5 @@
 @use '../global/' as h;
+@use '../util/' as l;
 
 .main.flex-jc-c i {
     position: relative;
@@ -112,4 +113,27 @@
 
 .button.flex-c-ai-c {
     padding-top: 3.125rem;
+}
+
+@include l.breakpoint-downs(small) {
+    .menu__list--dish--des p {
+        max-width: 75%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        
+
+
+    }
+}
+
+@include l.breakpoint-downs(small) {
+    .menu__list--dish:hover .menu__list--dish--des p {
+        width: 70%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+
+    }
 }

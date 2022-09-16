@@ -300,6 +300,16 @@ h1.hide-me:before {
   transform: translateX(-200%);
 }
 
+@media (max-width: 28.125em) {
+  .menu__list--dish:hover .menu__list--dish--des div {
+    width: 15%;
+  }
+}
+@media (max-width: 28.125em) {
+  .menu__list--dish:hover .menu__list--dish--des span strong {
+    transform: translateX(-185%);
+  }
+}
 .footer.flex-c-ai-c {
   align-items: flex-start;
 }
@@ -432,6 +442,22 @@ h1.hide-me:before {
   padding-top: 3.125rem;
 }
 
+@media (max-width: 28.125em) {
+  .menu__list--dish--des p {
+    max-width: 75%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+@media (max-width: 28.125em) {
+  .menu__list--dish:hover .menu__list--dish--des p {
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
 .main__title {
   font-family: "Shrikhand", cursive;
   text-align: center;
