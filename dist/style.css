@@ -550,11 +550,11 @@ h1.hide-me:before {
   top: 1rem;
   right: 0.8rem;
 }
-.usability__buttons--decor.flex-jc-c p {
+.usability__buttons--decor.flex-jc-c strong {
   font-weight: 700;
   font-size: 0.9rem;
   position: relative;
-  top: 0.6rem;
+  top: 0.55rem;
 }
 .usability__buttons--decor.flex-jc-c:hover {
   background: #f5edff;
