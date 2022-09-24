@@ -56,6 +56,13 @@ ul {
     border: thin solid whitesmoke;
   }
 }
+.ct {
+  font-weight: 700;
+  font-size: 0.9rem;
+  position: relative;
+  top: 0.55rem;
+}
+
 div.hide-me {
   margin: 0;
   padding: 0;
